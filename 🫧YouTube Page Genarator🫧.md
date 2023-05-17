@@ -13,44 +13,40 @@ A Streamlit application that generates YouTube video titles and scripts based on
    Start by cloning this repository to your local machine. You can do this by running the following command in your terminal:
 
    ```bash
-   git clone <repository_url>
+   git clone git@github.com:jordanistan/AutoTubeGPT.git
    ```
-
-   Replace `<repository_url>` with the URL of this GitHub repository.
 
 2. **Navigate to the Project Directory**
 
    After cloning the repository, navigate into the project directory:
 
    ```bash
-   cd <directory_name>
+   cd AutoTubeGPT
    ```
-
-   Replace `<directory_name>` with the name of the directory where the repository was cloned.
 
 3. **Build the Docker Image**
 
    Inside the project directory, build the Docker image by running the following command:
 
    ```bash
-   docker build -t youtube_gpt_creator .
+   docker build -t AutoTubeGPT .
    ```
 
-   This command tells Docker to build an image using the Dockerfile in the current directory (`.`) and tag it as "youtube_gpt_creator".
+   This command tells Docker to build an image using the Dockerfile in the current directory (`.`) and tag it as "AutoTubeGPT".
 
 4. **Run the Docker Container**
 
    Once the image is successfully built, run the application in a Docker container with the following command:
 
    ```bash
-   docker run -p 80:8501 youtube_gpt_creator
+   docker run -p 80:8501 AutoTubeGPT
    ```
 
    This will start the container and map port 80 of your machine to port 8501 of the container (where the Streamlit app is running).
 
 5. **Access the Application**
 
-   You can now access the application by opening a web browser and navigating to `http://localhost`.
+   You can now access the application by opening a web browser and navigating to `http://localhost:8501`.
 
 ## License
 
@@ -59,6 +55,3 @@ This project is licensed under the terms of the MIT license.
 ## Contributions
 
 Contributions, issues, and feature requests are welcome!
-```
-
-Remember to replace `<repository_url>` and `<directory_name>` with the URL of this GitHub repository and the name of the directory where the repository was cloned, respectively.
