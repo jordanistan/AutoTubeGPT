@@ -1,2 +1,4 @@
 api_key.conf
 __pycache__
+apikey.py
+.gitignore
